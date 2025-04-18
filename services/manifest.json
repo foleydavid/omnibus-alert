@@ -1,23 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "CGN Fantastic Four Searcher",
-  "version": "1.0",
-  "description": "Search CheapGraphicNovels.com for Fantastic Four Omnibus",
-  "permissions": ["scripting", "tabs"],
-  "host_permissions": [
-    "https://cheapgraphicnovels.com/*"
-  ],
-  "background": {
-    "service_worker": "searchTrigger.js"
-  },
+  "name": "CGN Fast Search",
+  "description": "Search CheapGraphicNovels.com quickly",
+  "version": "1.1",
   "action": {
-    "default_title": "Search for Fantastic Four Omnibus",
+    "default_title": "CGN Fast Search",
     "default_icon": {
       "16": "pow.png",
       "48": "pow.png",
       "128": "pow.png"
-    }
+    },
+    "default_popup": "popup.html"
   },
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": [
+    "https://cheapgraphicnovels.com/*"
+  ],
   "icons": {
     "16": "pow.png",
     "48": "pow.png",
